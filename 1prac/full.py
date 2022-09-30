@@ -203,11 +203,13 @@ plt.show()
 
 
 #4.3.3
+
 import matplotlib.pyplot as plt
 import numpy as np
 import math as m
 from scipy.integrate import simps
 from numpy import trapz as tr
+
 
 
 def fun(x: float) -> float:
@@ -219,7 +221,7 @@ ys = []
 for i in xs:
     ys.append(fun(i))
 
-plt.plot(xs, ys)
+plt.plot(xs, ys, color ="r")
 plt.fill_between(xs, ys)
 print(tr(ys))
 plt.title("Graphic")
